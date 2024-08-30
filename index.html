@@ -464,6 +464,42 @@
           </div>
 
           <!-- Cards Details and Money -->
+          <div class="bg-white rounded-lg px-5 py-5 flex flex-col gap-3">
+            <div class="">
+              <h1 class="text-black font-bold">Carts Items :</h1>
+              <ol id="cart-items" class="list-decimal px-5 font-bold"></ol>
+            </div>
+
+            <div class="h-[2px] bg-gray-400"></div>
+
+            <!-- Money Container -->
+            <div class="">
+              <p class="font-bold text-black">
+                Total Price:
+                <span id="total-price" class="text-gray-400">00.00</span
+                ><span class="text-gray-400"> TK</span>
+              </p>
+              <p class="font-bold text-black">
+                Discount: <span id="discount" class="text-gray-400">00.00</span
+                ><span class="text-gray-400"> TK</span>
+              </p>
+              <p class="font-bold text-black">
+                Total:
+                <span id="final-price" class="text-gray-400">00.00</span>
+                <span class="text-gray-400">TK</span>
+              </p>
+            </div>
+
+            <div class="h-[2px] bg-gray-400"></div>
+
+            <button
+              onclick="my_modal.showModal()"
+              id="purchase-btn"
+              class="btn rounded-lg w-full text-white bg-[#E527B2] mt-5 border-2 border-[#E527B2] hover:bg-transparent hover:border-2 hover:text-[#E527B2] hover:border-[#E527B2] btn-disabled"
+            >
+              Make Purchase
+            </button>
+          </div>
         </div>
       </section>
     </main>
