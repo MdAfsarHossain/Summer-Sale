@@ -97,7 +97,7 @@ function couponBtn(params) {
         return;
     }
 
-    const finalPrice = totalPrice + discountPrice;
+    const finalPrice = totalPrice - discountPrice;
         
     document.getElementById('final-price').innerText = finalPrice.toFixed(2);
 }
