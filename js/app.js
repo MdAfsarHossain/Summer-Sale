@@ -88,10 +88,11 @@ function couponBtn(params) {
         document.getElementById('coupon-code').value = '';
     }
     else {
-        alert('Invalid coupon code');
+        // alert('Invalid coupon code');
         // paramd
         // params.setAttribute('active', 'my_modal_2.showModal()');
         // params.setAttribute('acrive', '')
+        document.getElementById('my_modal_2').showModal();
         document.getElementById('coupon-code').value = '';
         return;
     }
